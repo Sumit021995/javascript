@@ -6,7 +6,7 @@ function countOccurences(str,ch){
         }
         
     }
-    console.log(count);
+    return count;
 }
 
 countOccurences("sumit saurav","v");
