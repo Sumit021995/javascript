@@ -149,3 +149,52 @@ console.log(result); // 20.01
 result = Math.floor('20.01');
 
 console.log(result); // 20
+
+// Convert to String Explicitly
+// To convert other data types to strings, you can use either String() or toString(). For example,
+
+
+//number to string
+
+result = String(324);
+
+console.log(result);  // "324"
+
+result = String(2 + 4);
+
+console.log(result); // "6"
+
+//other data types to string
+
+result = String(null);
+
+console.log(result); // "null"
+
+result = String(undefined);
+
+console.log(result); // "undefined"
+
+result = String(NaN);
+
+console.log(result); // "NaN"
+
+result = String(true);
+
+console.log(result); // "true"
+
+result = String(false);
+
+console.log(result); // "false"
+
+// using toString()
+
+result = (324).toString();
+
+console.log(result); // "324"
+
+result = true.toString();
+
+console.log(result); // "true"
+
+
+// Note: String() takes null and undefined and converts them to string. However, toString() gives error when null are passed.
