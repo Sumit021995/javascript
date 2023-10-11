@@ -273,3 +273,13 @@ if( a || c ){
   console.log("Code runs");  // This block runs because x || y returns 220(Truthy)
 }
 
+// Equality Coercion Equality coercion takes place when using ‘ == ‘ operator. As we have stated before**The ‘ == ‘operator compares values and not types.**While the above statement is a simple way to explain == operator, it’s not completely trueThe reality is that while using the ‘==’ operator, coercion takes place.The ‘==’ operator, converts both the operands to the same type and then compares them.
+
+var p = 12;
+var q = "12";
+p == q // Returns true because both 'a' and 'b' are converted to the same type and then compared. Hence the operands are equal.
+
+var r = 226;
+var s = "226";
+
+r === s // Returns false because coercion does not take place and the  operands are of different types. Hence they are not equal.
