@@ -98,3 +98,17 @@ result = Number(true);
 console.log(result); // 1
 result = Number(false);
 console.log(result); // 0
+
+
+// In JavaScript, empty strings and null values return 0. For example,
+
+
+
+
+result = Number(null);
+
+console.log(result);  // 0
+
+result = Number(' ')
+
+console.log(result);  // 0
