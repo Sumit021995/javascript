@@ -80,7 +80,7 @@ In JavaScript, explicit type conversions are done using built-in methods.
 Here are some common methods of explicit conversions.
 
 1. Convert to Number Explicitly
-To convert numeric strings and boolean values to numbers, you can use Number(). For example,*/
+To convert numeric strings and boolean values to numbers, you can use Number(). For example*/
 
 
 // string to number
@@ -100,7 +100,7 @@ result = Number(false);
 console.log(result); // 0
 
 
-// In JavaScript, empty strings and null values return 0. For example,
+// In JavaScript, empty strings and null values return 0. For example
 
 
 
@@ -113,7 +113,7 @@ result = Number(' ')
 
 console.log(result);  // 0
 
-// If a string is an invalid number, the result will be NaN. For example,
+// If a string is an invalid number, the result will be NaN. For example
 
 
 
@@ -131,7 +131,7 @@ result = Number(NaN);
 console.log(result); // NaN
 
 
-// You can also generate numbers from strings using parseInt(), parseFloat(), unary operator + and Math.floor(). For example,
+// You can also generate numbers from strings using parseInt(), parseFloat(), unary operator + and Math.floor(). For example
 
 
 result = parseInt('20.01');
@@ -151,7 +151,7 @@ result = Math.floor('20.01');
 console.log(result); // 20
 
 // Convert to String Explicitly
-// To convert other data types to strings, you can use either String() or toString(). For example,
+// To convert other data types to strings, you can use either String() or toString(). For example
 
 
 //number to string
@@ -198,3 +198,28 @@ console.log(result); // "true"
 
 
 // Note: String() takes null and undefined and converts them to string. However, toString() gives error when null are passed.
+
+// Convert to Boolean Explicitly
+// To convert other data types to a Boolean, you can use Boolean().
+
+// In JavaScript, undefined, null, 0, NaN, '' converts to false. For example
+
+result = Boolean('');
+
+console.log(result); // false
+
+result = Boolean(0);
+
+console.log(result); // false
+
+result = Boolean(undefined);
+
+console.log(result); // false
+
+result = Boolean(null);
+
+console.log(result); // false
+
+result = Boolean(NaN);
+
+console.log(result); // false
