@@ -21,4 +21,16 @@ console.log(b);
 ++b;
 console.log(b);
 
+let c=15;
+// increment
+console.log('++c = ', ++c); // x is now 6
+console.log('c++ = ', c++); // prints 6 and then increased to 7
+console.log('c = ', c);     // 7
+
+// decrement
+console.log('--c = ', --c); // x is now 6
+console.log('c-- = ', c--); // prints 6 and then decreased to 5
+console.log('c = ', c);     // 5
+
+
 
