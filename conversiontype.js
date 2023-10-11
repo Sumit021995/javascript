@@ -283,3 +283,4 @@ var r = 226;
 var s = "226";
 
 r === s // Returns false because coercion does not take place and the  operands are of different types. Hence they are not equal.
+
