@@ -112,3 +112,22 @@ console.log(result);  // 0
 result = Number(' ')
 
 console.log(result);  // 0
+
+// If a string is an invalid number, the result will be NaN. For example,
+
+
+
+
+result = Number('hello');
+
+console.log(result); // NaN
+
+result = Number(undefined);
+
+console.log(result); // NaN
+
+result = Number(NaN);
+
+console.log(result); // NaN
+
+
