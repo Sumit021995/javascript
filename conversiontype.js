@@ -223,3 +223,20 @@ console.log(result); // false
 result = Boolean(NaN);
 
 console.log(result); // false
+
+// All other values give true. For example
+
+
+
+result = Boolean(324);
+
+console.log(result); // true
+
+result = Boolean('hello');
+
+console.log(result); // true
+
+result = Boolean(' ');
+
+console.log(result); // true
+
