@@ -72,3 +72,20 @@ var reverseEachWord = reverseBySeparator(reverseEntireSentence, " ");
 function reverseBySeparator(string, separator) {
   return string.split(separator).reverse().join(separator);
 }
+
+// What’s the spread operator?
+
+// The spread operator is also indicated by the ... operator. It’ll spread an object’s property into another object and spread the array entries into another array.
+
+const foo = [1, 2, 3];
+const bar = [...foo];
+console.log(bar);
+
+// Then we get [1, 2, 3] as the value of bar since we made a copy of foo and assigned it to bar with the spread operator.
+
+// It’s also useful for merging arrays
+
+const foo1 = [1, 2, 3];
+const bar1 = [3, 4, 5];
+const baz = [...foo1, ...bar1];
+console.log(baz);
