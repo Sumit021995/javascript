@@ -89,3 +89,75 @@ const foo1 = [1, 2, 3];
 const bar1 = [3, 4, 5];
 const baz = [...foo1, ...bar1];
 console.log(baz);
+
+let new1= "my name is sumit";
+// new1.charAt(0);
+console.log(new1.charAt(0));//return charactor at specified Index
+
+new1.concat('saurav')
+
+console.log(new1.concat(' saurav'));//joins two or more strings
+
+
+//The replace() method replaces a specified value with another value in a string
+let text = "Please visit Microsoft!";
+
+console.log(text.replace("Microsoft", "W3Schools"));
+
+//By default, the replace() method replaces only the first match 
+
+let textnew = "Please visit Microsoft and Microsoft!";
+console.log(textnew.replace("Microsoft", "W3Schools")); 
+
+//By default, the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work
+
+let textnew1 = "Please visit Microsoft!";
+console.log(textnew1.replace("MICROSOFT", "W3Schools"));
+
+//To replace case insensitive, use a regular expression with an /i flag (insensitive):
+
+let textnew2 = "Please visit Microsoft!";
+console.log(textnew2.replace(/MICROSOFT/i, "W3Schools"));
+
+//To replace all matches, use a regular expression with a /g flag (global match)
+
+let textnew3 = "Please visit Microsoft and Microsoft!";
+console.log(textnew3.replace(/Microsoft/g, "W3Schools"));
+
+text.replaceAll()
+
+new1.split("")
+
+console.log(new1.split(""));//converts the string to an array of strings
+
+// new1.substr(start, length)
+
+// console.log(new1.charAt(0));//returns a part of a string
+
+// new1.substring(start,end)
+
+// console.log(new1.charAt(0));//returns a part of a string
+
+// new1.slice(start, end)
+
+// console.log(new1.charAt(0));//returns a part of a string
+
+// new1.toLowerCase()
+
+// console.log(new1.charAt(0));//returns the passed string in lower case
+
+// new1.toUpperCase()
+
+// console.log(new1.charAt(0));//returns the passed string in upper case
+
+// new1.trim()
+
+// console.log(new1.charAt(0));//removes whitespace from the strings
+
+// new1.includes()
+
+// console.log(new1.charAt(0));//searches for a string and returns a Boolean value
+
+// new1.search()
+
+// console.log(new1.charAt(0));//searches for a string and returns a position of a match
