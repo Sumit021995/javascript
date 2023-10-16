@@ -158,7 +158,19 @@ console.log(allFriends); // ['Rohit', 'Vivek', 'Sanket', 'Abishek','Vivek tiwari
 
 let anotherArray = [1,2,3,[4,5,6,7],8,9,[10,11,[12,13]]];
 let real_anotherArray = anotherArray.flat(Infinity);
-console.log(real_anotherArray);
+console.log(real_anotherArray); // [1,2,3,4,5,6,7,8,9,10,11,12,13]
+ 
+console.log(Array.isArray("Sumit")); // false
+console.log(Array.isArray(real_anotherArray)); // true
+console.log(Array.from("Sumit")); // [ 'S', 'u', 'm', 'i', 't' ]
+console.log(Array.from({myname:"Sumit"})); // [] , as it does not detect direct object
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1,score2,score3)); // [ 100, 200, 300 ]
+
 
 
 
