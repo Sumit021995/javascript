@@ -120,6 +120,45 @@ console.log(myArr2);// [2,3,4]
 console.log(myArr);// [1,5,6,7,8,9]
  // the splice method splits the original array into 2 different arrays and change the original array as given above
 
+const schoolFriend = ["Rohit","Vivek","Sanket","Abishek"]
+const collegeFriend = ["Vivek tiwari","Mayank","Lakshay","Ashu"]
+
+// Push Method
+// schoolFriend.push(collegeFriend);
+// console.log(schoolFriend); // Result is shown below as one array is pushed as an element in another array
+
+/* [
+  'Rohit',
+  'Vivek',
+  'Sanket',
+  'Abishek',
+  [ 'Vivek tiwari', 'Mayank', 'Lakshay', 'Ashu' ]
+]
+*/
+// console.log(schoolFriend.length); // 5 as seen above there are 5 elements
+let c = schoolFriend.concat(collegeFriend);
+console.log(c.length); // 8 , As 8 elements are in new array in c
+console.log(c); // concat not change anything to original array
+/* [
+    'Rohit',
+    'Vivek',
+    'Sanket',
+    'Abishek',
+    'Vivek tiwari',
+    'Mayank',
+    'Lakshay',
+    'Ashu'
+  ] */
+console.log(schoolFriend); // [ 'Rohit', 'Vivek', 'Sanket', 'Abishek' ]
+
+// Spread operator(...)
+
+let allFriends = [...collegeFriend,...schoolFriend]
+console.log(allFriends); // ['Rohit', 'Vivek', 'Sanket', 'Abishek','Vivek tiwari', 'Mayank', 'Lakshay', 'Ashu']
+
+let anotherArray = [1,2,3,[4,5,6,7],8,9,[10,11,[12,13]]];
+let real_anotherArray = anotherArray.flat(Infinity);
+console.log(real_anotherArray);
 
 
 
