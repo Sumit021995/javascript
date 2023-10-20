@@ -57,3 +57,18 @@ console.log(Math.floor(Math.random()*( max - min + 1 ) + min));
 console.log(Math.floor(Math.random()*( max - min + 1 ) + min));
 console.log(Math.floor(Math.random()*( max - min + 1 ) + min));
 console.log(Math.floor(Math.random()*( max - min + 1 ) + min));
+
+
+function lengthOfLastWord(str){
+  // remove extra space before 1st and after last word of string
+  let trimStr = str.trim();
+  console.log(trimStr);
+  // split string with space to saperate each word
+  let splitStr = trimStr.split(" ");
+  console.log(splitStr);
+  // get the last word from the array of words.
+  let lastWord = splitStr[splitStr.length-1];
+  //return the length of the last word
+  return lastWord.length;
+}
+console.log(lengthOfLastWord("My name is Sumit Saurav"));

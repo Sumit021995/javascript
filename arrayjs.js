@@ -37,13 +37,7 @@ const newData1 = [
 // You can access elements of an array using indices (0, 1, 2 …).
 
 
-const myArray = ['h', 'e', 'l', 'l', 'o'];
 
-// first element
-console.log(myArray[0]);  // "h"
-
-// second element
-console.log(myArray[1]); // "e"
 
 
 let newArray1 = [1,2,3,"Sumit",true,{Age:28}]
@@ -172,5 +166,36 @@ let score3 = 300;
 console.log(Array.of(score1,score2,score3)); // [ 100, 200, 300 ]
 
 
+const myArray = ['h', 'e', 'l', 'l', 'o'];
 
+console.log(myArray.sort());
+console.log(myArray);
+
+
+// first element
+console.log(myArray[0]);  // "h"
+
+// second element
+console.log(myArray[1]); // "e"
+
+const myArraynew = [1, 3, 8, 4, 5];
+console.log(myArraynew.sort(function(a,b){
+  console.log((a-b));
+  return a-b;
+}));
+
+
+function median(){
+const myArray1 = [1, 3, 8, 4, -5,-8,-1];
+// first arrange an array in assending order
+myArray1.sort();
+//Middle Index of an array if even elements(n) then = n/2 ,example 2,4,6,1
+let  middleindex = Math.floor(myArray1.length /2);
+if(myArray1.length%2 ===1){
+  return myArray1[middleindex];
+}else{
+  return (myArray1[middleindex] + myArray1[middleindex-1])/2;
+}
+}
+console.log(median());
 
