@@ -17,7 +17,7 @@ console.log(array2);
 const myList = [ ];
 
 // array of numbers
-const numberArray = [ 2, 4, 6, 8];
+const numberArray = [ 2, 4, 6, 8]; 
 
 // array of strings
 const stringArray = [ 'eat', 'work', 'sleep'];
