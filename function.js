@@ -51,3 +51,51 @@ function loggedInPassMessage1(username='Sam'){
 console.log(loggedInPassMessage1()); // `Sam just logged in`
 console.log(loggedInPassMessage1("Sumit")); // `Sumit just logged in` // in this situation argument is overwrited
 
+// let condition like shoping cart that items may add in future and we just need to add up the total price of added items
+
+function calculateCartPrice(num1){
+    return num1;
+
+}
+console.log(calculateCartPrice(20));//20
+console.log(calculateCartPrice(200,400,600));//200 here other two values are not returned here 
+// So to take these values in use we use rest operator just as spread operator i.e = ... example (...num1)
+
+function calculateCartPrice1(...num1){
+    return num1;
+
+}
+console.log(calculateCartPrice1(20,40,60,80));// [ 20, 40, 60, 80 ] so here we get the arguments in an array format
+
+//One more example
+
+function calculateCartPrice2(v1,v2,...num1){
+    console.log(v1+v2);
+    return num1;
+
+}
+console.log(calculateCartPrice2(20,40,60,80));// [ 60, 80 ] so here we get the arguments in an array format ,v1 And v2 are used as another variable 
+
+const user = {
+    username: "Sumit",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));
