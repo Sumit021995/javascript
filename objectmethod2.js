@@ -80,5 +80,5 @@ let obj6 = {1:'a',2:'b'}
  console.log(Object.entries(regularUser2)); // [ [ 'email', 'some@gmail.com' ], [ 'fullname', 'Sumit Saurav' ] ] 
  // above command returns array of keys and values as elements of an array as shown above
 
- console.log(regularUser2.hasOwnProperty('email')); // true 
+ console.log(regularUser2.hasOwnProperty('email')); // true  // to check the property is available 
   
