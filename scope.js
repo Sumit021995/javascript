@@ -100,3 +100,58 @@ one();
     }
   } 
   */
+
+
+  //In a function if we use this key in between same middle bracket then result is undefined
+
+  function two(){
+    let username = 'Sumit'
+    console.log(this.username);
+  }
+  two(); // undefined // As here username is declared but its value is not read here
+  // From here we see 'this' key is only working under object 
+
+  // New function Syntex
+
+  let newFunction = function(){
+    let username = 'Amit'
+    console.log(this.username);
+  }
+ // just to make an arrow function we just need to put ' => ' between small bracket and middle bracket or say
+ // between paranthesis and scope realted brackets
+
+  let newFunction1 = () => {
+    let username = 'Gaurav'
+    console.log(this);
+  }
+  newFunction1();// {} // As shown out of the function that this keyword shows empty object 
+  console.log(this); // {} same as in arrow function shown above
+
+  // Basic arrow function
+  const addTwoNumbers = (num1,num2) => {
+    return num1+num2;
+  }
+  console.log(addTwoNumbers(2,5));// 7
+  
+  // Some other syntex of arrow function 
+  // New syntex known for implisit return
+  
+  const addthreeNumbers = (num1,num2,num3) => num1+num2+num3 // single line arrow function syntex , No of return statement and bracket {}
+  console.log(addthreeNumbers(2,5,7));// 14 
+  
+  const addthreeNumbers1 = (num1,num2,num3) => (num1+num2+num3) // single line arrow function syntex , No of return statement and bracket {}
+  // no need of return keyword in small brackets  ,()=small bracket
+  // return keyword required when middle bracket is used ,{} =middle bracket
+  console.log(addthreeNumbers1(2,5,11));// 18 
+
+  // So implicit return mean there is no need of return keyword to return any thing from an arrow function as shown above
+  // In explicit return we need return keyword
+
+// If we need to return an object as an output without using return keyword we need to use small bracket ().
+
+const returnNumberstring = () => ({numberstring:'Two'}) // single line arrow function syntex , No of return statement and bracket {}
+console.log(returnNumberstring());// { numberstring: 'Two' }
+
+const returnNumber = () => { numberstring:'Two'} // single line arrow function syntex , No of return statement and bracket {}
+console.log(returnNumber());// undefined
+
