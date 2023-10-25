@@ -39,5 +39,22 @@ if(score > 100){
 // Short hand notation
 let balance = 1000;
 if(balance>500) console.log('greater than 500'); // Single line implicit code = no return required
-if(balance>500) console.log('greater than 500'),  // Multiple line implicit codes is saperated by (,) // Multple line implicit code = no return required
-console.log('Greater than 300 also'); // Multple line implicit code = no return required
+if(balance>500) console.log('greater than 500'),  
+console.log('Greater than 300 also'); // Multiple line implicit codes is saperated by (,) // Multple line implicit code = no return required
+// Using , is not a good practice
+
+// Different logical operators 
+// && = AND operator
+
+console.log(true && true ); // true
+console.log(true && false ); // false
+console.log(false && true ); // false
+console.log(false && false); // false
+
+// || = OR operator
+
+console.log(true || true ); // true
+console.log(true || false ); // true
+console.log(false || true ); // true
+console.log(false || false ); // false
+
