@@ -8,10 +8,10 @@ while (condition) {
 */
 // inilization and increment also required
 
-let index = 0;
+let index = 0; // initilization
 while (index <= 10) {
     console.log(`Value of Index is ${index}`);
-    index = index + 2;
+    index = index + 2; // increment
 }
 
 /*
@@ -24,10 +24,10 @@ Value of Index is 10
  */
 
 let myHero = ['hanuman ji','shree ram','shree krishna']
-let arr = 0;
+let arr = 0; // initilization
 while(arr < myHero.length){
     console.log(`my heros are ${myHero[arr]}`);
-    arr = arr + 1;
+    arr = arr + 1; // increment
 }
 /*
 my heros are hanuman ji
@@ -47,17 +47,20 @@ do {
 */
 
 let myObject = { username:'sumit', age:28 }
-let obj = 0;
+let obj = 0; // initilization
 
 do {
     console.log(`my object keys are  ${(Object.keys(myObject))[obj]}`);
-    obj = obj + 1;
+    obj = obj + 1; // increment
 } while ( obj < Object.keys(myObject).length );
 
 // Special case of do while loop
-let score = 11;
+let score = 11; // initilization
 
 do {
-    log
-    
-} while (condition);
+    console.log(`loop started at ${score}`);
+    score = score + 1; // increment
+} while (score < 10);
+
+// loop started at 11
+// As loop start 1 time then checks the conditions given 
