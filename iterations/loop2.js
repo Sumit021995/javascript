@@ -55,3 +55,9 @@ do {
 } while ( obj < Object.keys(myObject).length );
 
 // Special case of do while loop
+let score = 11;
+
+do {
+    log
+    
+} while (condition);
