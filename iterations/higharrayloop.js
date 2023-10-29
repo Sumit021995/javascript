@@ -109,5 +109,12 @@ console.log(newmap); // Map(3) { 'name' => 'Sumit', 'age' => '28', 'friend' => '
 
 // here 4th value is not added as it is a copy and in map only unique id is stored in object with same arrangement
 
+// for off loop on map
 
+for(let key of newmap){
+    console.log(key);
+}
  
+// [ 'name', 'Sumit' ]
+// [ 'age', '28' ]
+// [ 'friend', 'Rohit' ]
