@@ -114,7 +114,27 @@ console.log(newmap); // Map(3) { 'name' => 'Sumit', 'age' => '28', 'friend' => '
 for(let key of newmap){
     console.log(key);
 }
- 
+
 // [ 'name', 'Sumit' ]
 // [ 'age', '28' ]
 // [ 'friend', 'Rohit' ]
+
+for(let [key,value] of newmap){
+    console.log(key, ':-',value);
+}
+
+// name :- Sumit
+// age :- 28
+// friend :- Rohit
+
+
+
+// for of loop on object
+
+// let myObject = { name : 'sumit', age : 29, place : 'Sitamarhi'}
+
+// for(let [key,value] of myObject){
+    // console.log(key,':-', value);
+// }
+
+// TypeError: myObject is not iterable
