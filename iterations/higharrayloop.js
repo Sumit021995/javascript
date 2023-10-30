@@ -21,6 +21,8 @@
 6
  */
 
+// for of loop in string(string is iteratable)
+
 let myName = 'Sumit Saurav';
 for(let letter of myName){
     console.log(letter);
@@ -127,6 +129,13 @@ for(let [key,value] of newmap){
 // age :- 28
 // friend :- Rohit
 
+for(let [key,value] of newmap){
+    console.log(key,value);
+}
+
+// name Sumit
+// age 28
+// friend Rohit
 
 
 // for of loop on object
