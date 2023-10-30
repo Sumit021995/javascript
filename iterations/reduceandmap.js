@@ -32,9 +32,6 @@ console.log(newNums); // [ 41, 51,  61, 71, 81, 91, 101 ]
 
   let myNumers1 = [1,2,3,4,5,6,7,8,9,10]
 
-  
-
-// 0 + 1 + 2 + 3 + 4
 const initialValue = 0;
 const sumWithInitial = myNumers1.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
 
@@ -77,5 +74,42 @@ accumulator value = 15 & current value = 20
 accumulator value = 35 & current value = 30
 accumulator value = 65 & current value = 50
 accumulator value = 115 & current value = 80
+
+*/
+
+const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 5999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+]
+
+const priceToPay = shoppingCart.reduce((acc, item) => {
+    console.log(`acc = ${acc}  &  item.price = ${item.price}`);
+    return acc + item.price;
+}, 0);
+
+
+console.log(priceToPay); // 22996 = 12999 + 9997
+
+/*
+ Output of console.log(`acc = ${acc}  &  item.price = ${item.price}`);
+
+acc = 0  &  item.price = 2999
+acc = 2999  &  item.price = 999
+acc = 3998  &  item.price = 5999
+acc = 9997  &  item.price = 12999
 
 */
