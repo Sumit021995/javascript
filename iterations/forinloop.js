@@ -141,4 +141,12 @@ map.set('IN','India');
 map.set('USA','United States Of America');
 map.set('Fr','France');
 
+console.log(map);
 
+// for in loop on map
+
+for (let key in map){
+    console.log(key);
+}
+
+// here nothing is printed as Map is not iteratable
