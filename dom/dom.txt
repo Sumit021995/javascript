@@ -1,0 +1,56 @@
+DOM- Document Object Model
+let first make a file say 'dom1.html'
+now let,s create boiler plate through (! enter)
+
+now lets leave 1 meta tag with charset = "UTf-8" i.e <meta charset="UTF-8">
+in head section
+
+// whole html file 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    <style>
+    .bg-black{
+        background-color: #212121;
+        color: #fff;
+    }</style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title"  class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
+
+
+Now lets open this html file in live server
+
+in crome browser console 
+
+console.log(window)
+VM221:1 Window {window: Window, self: Window, document: document, name: '', location: Location, …} // with a dropdown menu
+
+console.log(window.document)
+#document
+
+
+console.log(document)
+#document
+
+console.dir(document)
+#document // see content more precisely
+
+// if we are on google website then in console 
+console.log(document.baseURI)
+https://www.google.com
+
+ console.log(document.links)
+ HTMLCollection(728) [a.mw-jump-link, a, a, a, a, a, a, a, a, a, a, a, a, a.mw-logo, a.cdx-button.cdx-button--fake-button.cdx-button--fake-button--enabled.cdx-button--weight-quiet.cdx-…, a, a, a, a, a, a, a, a.vector-toc-link, a.vector-toc-link, a.vector-toc-link, a.vector-toc-link, a.vector-toc-link, a.vector-toc-link, a.vector-toc-link, a.vector-toc-link, a.vector-toc-link, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.interlanguage-link-target, a.wbc-editpage, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a, a.mw-file-description, a, a, a, a, a.external.text, a, a, a, a, a, a, a, a.mw-redirect, a, …]
+
+console.log(document.links[2]) // we are in wikipedia 
+VM1049:1 <a href=​"/​wiki/​Wikipedia:​Contents" title=​"Guides to browsing Wikipedia">​…​</a>​flex
+
