@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chai aur Code | DOM</title>
-</head>
-<body style="background-color: #212121; color: #fff;">
+  </head>
+  <body style="background-color: #212121; color: #fff">
     <ul class="language">
-        <li>Javascript</li>
+      <li>Javascript</li>
     </ul>
-    
-</body>
-<script>
-    function addLanguage (langName){
-       const li = document.createElement('li');
-       const addText = document.createTextNode(`${langName}`)
-       li.appendChild(addText)
-        document.querySelector('.language').appendChild(li)
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      const addText = document.createTextNode(`${langName}`);
+      li.appendChild(addText);
+      document.querySelector(".language").appendChild(li);
     }
-    // addLanguage('Java');
+    addLanguage("Java");
 
-    function addNewLanguage(newLang){
-        const li = document.createElement('li');
-        li.innerHTML= `${newLang}`;
-        document.querySelector('.language').appendChild(li)
+    function addNewLanguage(newLang) {
+      const li = document.createElement("li");
+      li.innerHTML = `${newLang}`;
+      document.querySelector(".language").appendChild(li);
     }
-    // addNewLanguage('Python')
-    // addNewLanguage('Java')
+    addNewLanguage("Python");
 
-    function addOptiLanguage(langName){
-        const li = document.createElement('li');
-        li.appendChild(document.createTextNode(langName));
-        document.querySelector('.language').appendChild(li)
+    function addOptiLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
     }
-    addOptiLanguage('Typescript')
+    addOptiLanguage("Typescript");
 
-      
-</script>
+    // edit method
+    const secondLang = document.querySelector("li:nth-child(2)");
+    //   secondLang.innerHTML = 'Mojo'
+    const newli = document.createElement('li');
+    newli.textContent = 'Mojo';
+    secondLang.replaceWith(newli)
+  </script>
 </html>
