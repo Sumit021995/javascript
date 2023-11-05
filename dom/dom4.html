@@ -25,8 +25,16 @@
         li.innerHTML= `${newLang}`;
         document.querySelector('.language').appendChild(li)
     }
-    addNewLanguage('Python')
-    addNewLanguage('Java')
+    // addNewLanguage('Python')
+    // addNewLanguage('Java')
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('Typescript')
+
       
 </script>
 </html>
