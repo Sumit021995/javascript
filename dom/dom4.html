@@ -18,6 +18,15 @@
        li.appendChild(addText)
         document.querySelector('.language').appendChild(li)
     }
-    addLanguage('Java');
+    // addLanguage('Java');
+
+    function addNewLanguage(newLang){
+        const li = document.createElement('li');
+        li.innerHTML= `${newLang}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addNewLanguage('Python')
+    addNewLanguage('Java')
+      
 </script>
 </html>
