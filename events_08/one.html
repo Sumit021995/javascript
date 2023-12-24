@@ -23,7 +23,26 @@
     // Javascript is a Sequential run language 
     // Javascript Events are  sequential 
 
-    document.getElementById('owl').addEventListener('click',function(){},false)
+    document.getElementById('images').addEventListener('click',function(e){
+       
+        e.preventDefault();
+        e.stopPropagation();
+        console.log(e.target.id);// id name of elements like google,photoshop,japan...
+        console.log(e); // PointerEvent
+        console.log(e.target); // <img ...>,<a...></a>
+        console.log(e.target.tagName);// IMG, A
+        console.log(e.target.parentNode); // <li>...</li>
+        if(e.target.tagName === 'IMG'){
+            let removeItem = e.target.parentNode
+            removeItem.remove();
+
+        }else if(e.target.id === 'google'){
+            alert('Google is Clicked')
+        }
+
+
+       
+    },false);
     
 
 
