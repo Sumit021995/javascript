@@ -13,6 +13,52 @@
 </body>
 <script>
 
+    myDate = new Date().toLocaleTimeString();
+    document.getElementById('start').addEventListener('click', function(){
+        startChain();
+    })
+
+    document.getElementById('stop').addEventListener('click', function(){
+        stopChain();
+    })
+
+     let stopChain = function(){
+        clearInterval(interval);
+    }
+     let startChain = function(){
+        let interval = setInterval(changeMyName,2000);
+    }
+
+     
+
+     let changeMyName = function(){
+    document.querySelector('h1').innerHTML = ` My Name is Sumit Saurav , Random number - ${parseInt(Math.random()*10)} `
+
+    }
+
+    // document.getElementById('start').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     let myDate= new Date().toLocaleString()
+    //     let myNameInterval = setInterval(myName,2000)
+        
+    // document.getElementById('stop').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     clearInterval(myNameInterval);
+    //  })
+
+    // })
+
+    // let myName = function(){
+    // document.querySelector('h1').innerHTML = `My Name is Sumit Saurav , Current Time - ${myDate} , Random number - ${Math.random()*10}`
+        
+    // }
+    
+
+
+    
+    
+    
+
 
 </script>
 </html>
