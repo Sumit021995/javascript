@@ -13,19 +13,21 @@
 </body>
 <script>
 
-    
+
+    let interval ;
     document.getElementById('start').addEventListener('click', function(){
-        
-        let interval = setInterval(function(){
-         let myDate = new Date().toLocaleTimeString();
+        interval = setInterval(function(){
+        let myDate = new Date().toLocaleTimeString();
     document.querySelector('h1').innerHTML = ` My Name is Sumit Saurav , Current Time - ${myDate} , Random number - ${parseInt(Math.random()*10)} `
 
     },1000);
     
-    document.getElementById('stop').addEventListener('click', function(){
-        clearInterval(interval);
     })
 
+    document.getElementById('stop').addEventListener('click', function(){
+        clearInterval(interval);
+        alert('interval stopped');
+        
     })
 
     
