@@ -12,6 +12,21 @@
     
 </body>
 <script>
+
+// const sayHitesh = function(){
+//         console.log("Hitesh");
+//     }
+//     const changeText = function(){
+//         document.querySelector('h1').innerHTML = "best JS series"
+//     }
+
+//     const changeMe = setTimeout(changeText, 2000)
+
+//     document.querySelector('#stop').addEventListener('click', function(){
+//         clearTimeout(changeMe)
+//         console.log("STOPPED")
+//     })
+
     // The setTimeout() method calls a function after a number of milliseconds 
     let setMyName = setTimeout(function(){
         // console.log('Sumit');
@@ -20,11 +35,11 @@
 
     let alertStop = setTimeout(function(){
         alert('To Stop Changes click on Stop Button');
-        console.log(``);
     },2000)
 
     document.querySelector('#stop').addEventListener('click',function(){
         clearTimeout(setMyName);
+        alert(`Change Stopped`)
     })
 
  
