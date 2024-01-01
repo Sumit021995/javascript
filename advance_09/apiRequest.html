@@ -31,9 +31,10 @@
     });
 
     const requestUrl = "https://api.github.com/users/sumit021995";
+    const requestUrl1 = "https://api.github.com/users/imvivekanand"
     let xhr = new XMLHttpRequest();
     let data;
-    xhr.open("GET", requestUrl);
+    xhr.open("GET", requestUrl1);
     xhr.onreadystatechange = function () {
       console.log(xhr.readyState);
       if (xhr.readyState === 4) {
