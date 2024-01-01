@@ -31,10 +31,12 @@
     });
 
     const requestUrl = "https://api.github.com/users/sumit021995";
-    const requestUrl1 = "https://api.github.com/users/imvivekanand"
+    const requestUrl1 = "https://api.github.com/users/imvivekanand";
+    const requestUrl2 = "https://api.github.com/users/hiteshchoudhary";
+
     let xhr = new XMLHttpRequest();
     let data;
-    xhr.open("GET", requestUrl1);
+    xhr.open("GET", requestUrl);
     xhr.onreadystatechange = function () {
       console.log(xhr.readyState);
       if (xhr.readyState === 4) {
