@@ -23,10 +23,12 @@
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
-            const data = this.responseText
+            const data = JSON.parse(this.responseText)
             console.log(data.followers); // undefined // as we get data in string form
             console.log(typeof data); // string
-            console.log();
+            console.log(data);
+            console.log(data.followers);
+            console.log(data.name);
             
         }
     }
