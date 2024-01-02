@@ -30,8 +30,9 @@
 const promiseOne = new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log('Promise is resolved');
+        resolve();
     },1000)
-    resolve();
+    
 })
 
 promiseOne.then(function () {
@@ -42,6 +43,9 @@ promiseOne.then(function () {
 
 new Promise(function(resolve,reject){
 setTimeout(function(){
-    console.log();
+    console.log('Async task 2 completed');
+    resolve();
 },1000)
+}).then(function(){
+    console.log('Async task 2 resolved');
 })
