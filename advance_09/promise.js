@@ -12,4 +12,9 @@
 // rejected: meaning that the operation failed.
 
 
-const promiseOne = new Promise();
+
+const promiseOne = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("foo");
+    }, 300);
+  });
