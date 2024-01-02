@@ -49,3 +49,23 @@ setTimeout(function(){
 }).then(function(){
     console.log('Async task 2 resolved');
 })
+
+
+const promiseThree = new Promise(function(resolve,reject){
+setTimeout(function(){
+    console.log('Async task 3 completed');
+    resolve({username: 'Sumit', email:"xyz@example.com"});
+},1000)
+}).then(function(user){
+    console.log(user); // { username: 'Sumit', email: 'xyz@example.com' }
+})
+
+
+const promisefour = new Promise(function(resolve,reject){
+setTimeout(function(){
+    console.log('Async task 3 completed');
+    resolve({username: 'Sumit', email:"xyz@example.com"});
+},1000)
+}).then(function(user){
+    console.log(user); // { username: 'Sumit', email: 'xyz@example.com' }
+})
