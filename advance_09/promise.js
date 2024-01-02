@@ -38,3 +38,8 @@ promiseOne.then(function () {
     console.log('Promise consumed');
     
 })
+
+
+new Promise(function(resolve,reject){
+setTimeout(,1000)
+})
