@@ -41,5 +41,7 @@ promiseOne.then(function () {
 
 
 new Promise(function(resolve,reject){
-setTimeout(,1000)
+setTimeout(function(){
+    console.log();
+},1000)
 })
