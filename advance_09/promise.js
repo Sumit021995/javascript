@@ -12,9 +12,28 @@
 // rejected: meaning that the operation failed.
 
 
+// syntex
 
-const promiseOne = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("foo");
-    }, 300);
-  });
+// const promiseOne = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("foo");
+//     }, 300);
+//   });
+
+//   myPromise
+//   .then(handleFulfilledA, handleRejectedA)
+//   .then(handleFulfilledB, handleRejectedB)
+//   .then(handleFulfilledC, handleRejectedC);
+
+// promise creation part 
+
+const promiseOne = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log('Promise is resolved');
+    },1000)
+    resolve();
+})
+
+promiseOne.then(function () {
+    
+})
