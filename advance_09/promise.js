@@ -34,7 +34,7 @@ const promiseOne = new Promise(function(resolve,reject){
     resolve();
 })
 
-promiseOne.then(function (e) {
-    console.log(e);
+promiseOne.then(function () {
+    console.log('Promise consumed');
     
 })
