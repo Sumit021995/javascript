@@ -34,6 +34,7 @@ const promiseOne = new Promise(function(resolve,reject){
     resolve();
 })
 
-promiseOne.then(function () {
+promiseOne.then(function (e) {
+    console.log(e);
     
 })
