@@ -56,7 +56,8 @@ setTimeout(function(){
     console.log('Async task 3 completed');
     resolve({username: 'Sumit', email:"xyz@example.com"});
 },1000)
-}).then(function(user){
+})
+promiseThree.then(function(user){
     console.log(user); // { username: 'Sumit', email: 'xyz@example.com' }
 })
 
@@ -75,11 +76,35 @@ setTimeout(function(){
 })
 
 promisefour.then(function(user){
-    console.log(user); // { username: 'Sumit', email: 'xyz@example.com' }
+    console.log(user); // When error is false above then it shows - { username: 'Sumit', password: 'xyz' }
     console.log(user.username); 
     return user.username
 }).then(function(username){
 console.log(username);
 }).catch(function(error){
-    console.log(error);
+    console.log(error); // When error is true then otput is " ERROR: Something Went Wrong "
+})
+
+
+const promisefive = new Promise(function(resolve,reject){
+setTimeout(function(){
+    let error = false;
+    if(!error){
+        resolve({username: 'Sumit', password:"xyz"});
+    }else{
+        reject('ERROR: Something Went Wrong')
+    }
+
+},1000)
+
+})
+
+promisefive.then(function(user){
+    console.log(user); // { username: 'Sumit', password: 'xyz' }
+    console.log(user.username); // Sumit
+    return user.username
+}).then(function(username){
+console.log(username); // Sumit
+}).catch(function(error){
+    console.log(error); // When error is true then otput is " ERROR: Something Went Wrong "
 })
