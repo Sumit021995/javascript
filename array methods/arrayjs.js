@@ -70,7 +70,7 @@ console.log(newArray2); // [ 2, 3, 'Saurav', false, { Friend: 'vivek' } ]
 
 console.log(newArray2.unshift(10)); // 6, It shows number of elements in an array after adding 10 in the array at 1st position
 
-console.log(newArray2.unshift(10)); // [ 1, 2, 3, 'Saurav', false, { Friend: 'vivek' } ]
+console.log(newArray2.unshift(10)); // [ 10 , 10, 2, 3, 'Saurav', false, { Friend: 'vivek' } ]
 
 let a = newArray2.unshift(10)
 

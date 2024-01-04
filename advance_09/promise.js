@@ -63,9 +63,23 @@ setTimeout(function(){
 
 const promisefour = new Promise(function(resolve,reject){
 setTimeout(function(){
-    console.log('Async task 3 completed');
-    resolve({username: 'Sumit', email:"xyz@example.com"});
+    let error = true;
+    if(!error){
+        resolve({username: 'Sumit', password:"xyz"});
+    }else{
+        reject('ERROR: Something Went Wrong')
+    }
+
 },1000)
-}).then(function(user){
+
+})
+
+promisefour.then(function(user){
     console.log(user); // { username: 'Sumit', email: 'xyz@example.com' }
+    console.log(user.username); 
+    return user.username
+}).then(function(username){
+console.log(username);
+}).catch(function(error){
+    console.log(error);
 })
