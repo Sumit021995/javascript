@@ -99,12 +99,15 @@ setTimeout(function(){
 
 })
 
-promisefive.then(function(user){
+promisefive
+.then(function(user){
     console.log(user); // { username: 'Sumit', password: 'xyz' }
     console.log(user.username); // Sumit
     return user.username
-}).then(function(username){
+})
+.then(function(username){
 console.log(username); // Sumit
-}).catch(function(error){
+})
+.catch(function(error){
     console.log(error); // When error is true then otput is " ERROR: Something Went Wrong "
 })
