@@ -140,3 +140,19 @@ console.log(username); // Sumit
 .catch(function(error){
     console.log(error); // When error is true then otput is " ERROR: Something Went Wrong "
 }).finally(()=> console.log('Promise Six is either resolved or rejected '))
+
+
+let promiseSeven = new Promise((resolve,reject)=>{
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve({username: 'Sumit', password:"xyz"});
+        }else{
+            reject('ERROR: Something Went Wrong promise 6 ')
+        }
+    
+    },1000)
+    
+    })
+promiseSeven
+.then().catch().finally()
