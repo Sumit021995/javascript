@@ -154,5 +154,5 @@ let promiseSeven = new Promise((resolve,reject)=>{
     },1000)
     
     })
+
 promiseSeven
-.then().catch().finally()
