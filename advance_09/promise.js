@@ -186,4 +186,15 @@ const promiseX = new Promise(function (resolve, reject) {
     }
   }
 
-  getAllData()
+//   getAllData()
+
+  fetch('https://api.github.com/users/imvivekanand')
+  .then((response)=>{
+    return response.json()
+  })
+  .then((data)=>{
+    console.log(data);
+  })
+  .catch((error)=>{
+    console.log(error);
+  })
