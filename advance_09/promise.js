@@ -111,3 +111,32 @@ console.log(username); // Sumit
 .catch(function(error){
     console.log(error); // When error is true then otput is " ERROR: Something Went Wrong "
 })
+
+
+
+let promiseSix = new Promise((resolve,reject)=>{
+        setTimeout(function(){
+            let error = true;
+            if(!error){
+                resolve({username: 'Sumit', password:"xyz"});
+            }else{
+                reject('ERROR: Something Went Wrong promise 6 ')
+            }
+        
+        },1000)
+        
+        })
+
+
+promiseSix
+.then(function(user){
+    console.log(user); // { username: 'Sumit', password: 'xyz' }
+    console.log(user.username); // Sumit
+    return user.username
+})
+.then(function(username){
+console.log(username); // Sumit
+})
+.catch(function(error){
+    console.log(error); // When error is true then otput is " ERROR: Something Went Wrong "
+}).finally(()=> console.log('Promise Six is either resolved or rejected '))
