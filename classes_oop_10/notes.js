@@ -42,3 +42,24 @@ Car.prototype.drive = function() {
     Constructor functions are used to create objects with a common structure.
     They are invoked using the new keyword to create instances of objects.
   */
+
+  /*
+  4.Encapsulation
+    Encapsulation is the bundling of data and methods that operate on the data into a single unit, or object.
+    JavaScript supports encapsulation through the use of objects and closures.
+  */
+
+  /*
+  3.Constructor Functions
+    Constructor functions are used to create objects with a common structure.
+    They are invoked using the new keyword to create instances of objects.
+  */
+
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      
+      const person1 = new Person('Alice', 30);
+      const person2 = new Person('Bob', 25);
+      
