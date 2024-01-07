@@ -8,6 +8,8 @@ The class syntax in JavaScript provides a more convenient and familiar way to de
 
 ## OOP - Object oriented Programming
 
+## why use OOP
+
 Object-oriented programming (OOP) is a programming paradigm that uses objects to organize code. In JavaScript, OOP is achieved through the use of objects, prototypes, and the prototype chain. While JavaScript is a prototype-based language, it supports object-oriented programming principles.
 
 
@@ -33,8 +35,6 @@ These are fundamental concepts of OOP in JavaScript. While JavaScript's approach
 ## Object
 - collection of properties and methods
 - toLowerCase
-
-## why use OOP
 
 ## parts of OOP
 Object literal 
