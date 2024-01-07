@@ -10,10 +10,25 @@ The class syntax in JavaScript provides a more convenient and familiar way to de
 
 Object-oriented programming (OOP) is a programming paradigm that uses objects to organize code. In JavaScript, OOP is achieved through the use of objects, prototypes, and the prototype chain. While JavaScript is a prototype-based language, it supports object-oriented programming principles.
 
+
 Here are key concepts related to OOP in JavaScript:
 1.Objects
+    JavaScript is designed around objects. An object is a collection of key-value pairs, where values can be primitives, other objects, or functions.
+    Objects in JavaScript can be created using object literals or through constructor functions.
 2.Prototypes
-3.
+    Each object in JavaScript has an associated prototype, which is another object that it inherits properties and methods from.
+    Prototypes are used to implement inheritance and to share methods and properties between objects.
+3.Constructor Functions
+    Constructor functions are used to create objects with a common structure.
+    They are invoked using the new keyword to create instances of objects.
+4.Encapsulation
+    Encapsulation is the bundling of data and methods that operate on the data into a single unit, or object.
+    JavaScript supports encapsulation through the use of objects and closures.
+5.Inheritance
+    Inheritance allows a new object to inherit properties and methods from an existing object.
+    In JavaScript, inheritance is achieved through the prototype chain.
+
+These are fundamental concepts of OOP in JavaScript. While JavaScript's approach to OOP is prototype-based, ES6 introduced a more familiar class syntax, which is essentially syntactic sugar over the existing prototype system.    
 
 ## Object
 - collection of properties and methods
