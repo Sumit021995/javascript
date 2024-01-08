@@ -1,3 +1,5 @@
+// object literal
+
 const user = {
     username: "Sumit",
     loginCount: 8,
