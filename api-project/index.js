@@ -12,6 +12,7 @@ document.getElementById('start').addEventListener('click',()=>{
         //   console.log(randomNo);
           return data[randomNo].text 
         }).then((text)=>{
+          
               document.getElementById('outputText').innerText = `${text}`
         })
         .catch((error)=>{
