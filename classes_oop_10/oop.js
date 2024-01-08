@@ -22,3 +22,5 @@ const user = {
 console.log(user.username); // Sumit
 console.log(user.getUserDetails()); 
 
+// "this" keyword is used for this current context
+
