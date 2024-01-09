@@ -26,23 +26,28 @@ let url = 'https://jacintodesign.github.io/quotes-api/data/quotes.json'
 
 async function getMyDetails (){
   try {
-    fetch()
-  } catch (error) {
+    myData = await fetch(url)
+    myData = await myData.json()
+    console.log(typeof myData);
+    console.log(myData);
     
+  } catch (error) {
+    alert('error')
   }
 }
+getMyDetails()
 
-fetch("url")
-  .then((response) => {
-    console.log(response.json());
-    return response.json();
-  }).then((data)=>{
-    myData = data;
-    console.log(myData);
-  })
- .catch((error) => {
-    console.log(error);
-  });
+
+// fetch("url")
+//   .then((response) => {
+//     console.log(response.json());
+//     return response.json();
+//   }).then((data)=>{
+//     myData = data;
+//     console.log(myData);
+//   })
+//  .catch((error) => {
+//     console.log(error);
+//   });
 
 // document.getElementById("outputText").innerText =`${myData[parseInt(Math.random()*8261 + 1)]}`;
-console.log(myData);
