@@ -64,7 +64,7 @@ var rotate = function(nums, k) {
  };
 
  rotate(nums,k)
-console.log(this.nums);
+// console.log(this.nums);
 
 
 
