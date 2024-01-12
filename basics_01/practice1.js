@@ -55,7 +55,15 @@ for (let i = 0; i < k1; i++) {
 
 // console.log(arrayNew());
 
+var rotate = function(nums, k) {
+    k=k%nums.length;
+    let X=nums.splice(-k);
+    nums.unshift(...X)
+     
+ 
+ };
 
+ 
 
 
 
