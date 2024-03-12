@@ -6,7 +6,7 @@ multiplyBy5.power = 2
 
 console.log(multiplyBy5(3)); // 15
 console.log(multiplyBy5.power); // 2
-console.log(multiplyBy5.Prototype); // undefined
+console.log(multiplyBy5.Prototype); // undefined , {}
 
 function createItemPrice(item,score){
     this.item = item
