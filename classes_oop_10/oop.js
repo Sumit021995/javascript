@@ -24,3 +24,12 @@ console.log(user.getUserDetails());
 
 // "this" keyword is used for this current context
 
+function User(username,loginCount,isLogedIn){
+    this.username = username;
+    this.loginCount = loginCount;
+    this.isLogedIn = isLogedIn;
+    return this;
+}
+
+
+console.log(User("sumit",2,true));
