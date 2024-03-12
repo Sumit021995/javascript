@@ -31,6 +31,8 @@ function User(username,loginCount,isLogedIn){
     return this;
 }
 
-const newUser = User("sumit",5,true)
+const newUserOne = new User("sumit",5,true)
+const newUserTwo = new User("amit",2,false)
 
-console.log(newUser);
+console.log(newUserOne);
+console.log(newUserTwo);
