@@ -4,8 +4,9 @@ const multiplyBy5 = (num)=>{
 
 multiplyBy5.power = 2
 
-console.log(multiplyBy5(3));
-console.log(multiplyBy5.power);
+console.log(multiplyBy5(3)); // 15
+console.log(multiplyBy5.power); // 2
+console.log(multiplyBy5.prototype);
 
 function createItemPrice(item,score){
     this.item = item
