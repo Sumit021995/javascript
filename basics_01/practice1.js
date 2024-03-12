@@ -4,6 +4,13 @@ let k = 3
 let nums1 = [-1,-100,3,99]
 let k1 = 2
 
+console.table([nums,nums1])
+
+const a="Sumit"
+const b="SumitSaurav"
+const c="SumitSauravkarn"
+console.table([a,b,c])
+
 // var rotate = function(nums, k) {
 //     let result = [];
 //     for(let i=0; i < k; i++){
