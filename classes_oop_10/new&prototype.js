@@ -8,7 +8,7 @@ multiplyBy5.power = 2
 
 console.log(multiplyBy5(3)); // 15
 console.log(multiplyBy5.power); // 2
-console.log(multiplyBy5.Prototype); // undefined , {}
+// console.log(multiplyBy5.Prototype); // undefined , {}
 // console.log(new); // undefined , {}
 
 function createItemPrice(item,score){
@@ -19,10 +19,15 @@ function createItemPrice(item,score){
 createItemPrice.prototype.increment = function(){
     this.score++
 }
+createItemPrice.prototype.printMe = function(){
+    console.log(`price is ${this.score}`);
+}
 
 const chai = new createItemPrice("chai", 25)
 const tea = new createItemPrice("tea", 100)
 
 chai.increment();
-console.log(tea);
-console.log(chai);
+chai.printMe();
+// console.log(chai.increment()); // undefined
+console.log(tea); // createItemPrice { item: 'tea', score: 100 }
+console.log(chai); // createItemPrice { item: 'chai', score: 26 }
