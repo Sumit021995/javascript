@@ -28,7 +28,7 @@ function User(username,loginCount,isLogedIn){
     this.username = username;
     this.loginCount = loginCount;
     this.isLogedIn = isLogedIn;
-    return this;
+    // return this;
 }
 
 const newUserOne = new User("sumit",5,true)
