@@ -1,26 +1,26 @@
 // object literal
 
-// const user = {
-//     username: "Sumit",
-//     loginCount: 8,
-//     signedIn: true,
+const user = {
+    username: "Sumit",
+    loginCount: 8,
+    signedIn: true,
 
-//     getUserDetails: function(){
-//         console.log("Got user details from database"); // Got user details from database
-//         console.log(`Username: ${this.username}`); // Username: Sumit
-//         console.log(this);/* {
-//             username: 'Sumit',
-//             loginCount: 8,
-//             signedIn: true,
-//             getUserDetails: [Function: getUserDetails]
-//           }
-//           undefined */
-//     }
+    getUserDetails: function(){
+        console.log("Got user details from database"); // Got user details from database
+        console.log(`Username: ${this.username}`); // Username: Sumit
+        console.log(this);/* {
+            username: 'Sumit',
+            loginCount: 8,
+            signedIn: true,
+            getUserDetails: [Function: getUserDetails]
+          }
+          undefined */
+    }
 
-// }
+}
 
-// console.log(user.username); // Sumit
-// console.log(user.getUserDetails()); 
+console.log(user.username); // Sumit
+console.log(user.getUserDetails()); 
 
 // "this" keyword is used for this current context
 
@@ -31,5 +31,6 @@ function User(username,loginCount,isLogedIn){
     return this;
 }
 
+const newUser = User("sumit",5,true)
 
-console.log(User("sumit",2,true));
+console.log(newUser);
