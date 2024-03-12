@@ -27,7 +27,7 @@ const chai = new createItemPrice("chai", 25)
 const tea = new createItemPrice("tea", 100)
 
 chai.increment();
-chai.printMe();
+chai.printMe(); // price is 26
 // console.log(chai.increment()); // undefined
 console.log(tea); // createItemPrice { item: 'tea', score: 100 }
 console.log(chai); // createItemPrice { item: 'chai', score: 26 }
