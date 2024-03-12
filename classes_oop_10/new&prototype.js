@@ -16,12 +16,13 @@ function createItemPrice(item,score){
     this.score = score
 }
 
-createItemPrice.prototype.increment = ()=>{
-    score++
+createItemPrice.prototype.increment = function(){
+    this.score++
 }
 
-const chai = createItemPrice("chai", 25)
-const tea = createItemPrice("tea", 100)
+const chai = new createItemPrice("chai", 25)
+const tea = new createItemPrice("tea", 100)
 
-console.log(chai);
+chai.increment();
 console.log(tea);
+console.log(chai);
